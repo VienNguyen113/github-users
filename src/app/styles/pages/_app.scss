@@ -1,0 +1,38 @@
+#root {
+  padding: 1rem;
+}
+.Person {
+  display: flex;
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    color: #585454;
+    padding-left: 5px;
+    &--title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      margin: 8px 0 10px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+  }
+
+  &__link {
+    border-radius: 5px;
+    margin: 0 5px 10px 0;
+    padding: 7px 15px;
+    background: #006dc8;
+    color: white;
+    display: inline-block;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
