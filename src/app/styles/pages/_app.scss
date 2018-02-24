@@ -1,4 +1,4 @@
-#root {
+.Dashboard__content {
   padding: 1rem;
 }
 .Person {
@@ -21,7 +21,7 @@
     margin-left: 10px;
     flex-direction: column;
     border-bottom: 1px solid #ccc;
-    width: 100%;
+    width: calc(100% - 70px);
   }
 
   &__link {
@@ -34,5 +34,23 @@
     &:hover {
       opacity: 0.8;
     }
+  }
+}
+
+.Navbar {
+  background: #333;
+  color: white;
+  height: 48px;
+  position: relative;
+  font-size: 16px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__back {
+    color: white;
+    position: absolute !important;
+    left: 0;
+    top: 0;
   }
 }

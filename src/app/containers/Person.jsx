@@ -1,14 +1,13 @@
 import React from "react";
 import { object, func } from "prop-types";
 import { connect } from "react-redux";
-import Avatar from 'material-ui/Avatar';
+import { Avatar } from "material-ui";
 
 import { getPerson } from "app/actions/users";
 
 class Person extends React.Component {
   constructor(props) {
     super(props);
-
     this.props.getPerson(this.props.match.params.username);
   }
 

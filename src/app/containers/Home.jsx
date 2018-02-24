@@ -8,7 +8,6 @@ import { getUsers } from "app/actions/users";
 class Home extends React.Component {
   constructor(props) {
     super(props);
-
     this.props.getUsers();
   }
 
